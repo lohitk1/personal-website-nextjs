@@ -21,14 +21,18 @@
   justify-content: center;
   text-align: center;
   min-height: calc(100vh - 7rem);
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   position: relative;
   z-index: 1;
   cursor: default;
 }
 
+/* Pin icons to the left-center, out of the normal flow */
 .introtext .socmed {
-  margin-bottom: 2.5rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .introtext h1 {
@@ -58,6 +62,13 @@
     padding: 2rem 1.5rem;
   }
 
+  /* On mobile, take icons out of absolute and stack them above name */
+  .introtext .socmed {
+    position: static;
+    transform: none;
+    margin-bottom: 1.5rem;
+  }
+
   .introtext h1 {
     font-size: 3rem;
     line-height: 1.1;
@@ -65,10 +76,6 @@
 
   .introtext p {
     font-size: 1.1rem;
-  }
-
-  .introtext .socmed {
-    margin-bottom: 1.5rem;
   }
 }
 
