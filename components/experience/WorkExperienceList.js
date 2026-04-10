@@ -2,21 +2,19 @@ import WorkExperienceItem from "./WorkExperienceItem";
 
 function WorkExperienceList(props) {
   return (
-    <div>
-      <ul className="list">
-        {props.experiences?.map((experience) => (
-          <WorkExperienceItem
-            key={experience.id}
-            id={experience.id}
-            date={experience.date}
-            company={experience.company}
-            location={experience.location}
-            role={experience.role}
-            description={experience.description}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul className="exp-list">
+      {props.experiences?.map((exp) => (
+        <WorkExperienceItem
+          key={exp.id}
+          id={exp.id}
+          date={exp.date}
+          company={exp.company}
+          location={exp.location}
+          role={exp.role}
+          description={exp.description}
+        />
+      ))}
+    </ul>
   );
 }
 

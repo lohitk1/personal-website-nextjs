@@ -1,30 +1,35 @@
 .navcontainer {
-  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 7rem;
-  z-index: 10;
-  position: relative;
-  background-image: url("../../assets/Navbar_bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  height: 64px;
   padding: 0 2rem;
+  background: rgba(7, 7, 15, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-/* Logo li pushed all the way left; all other li's flow right */
 .logo {
   margin-right: auto;
   display: flex;
   align-items: center;
-  padding: 0.5rem 0;
+  flex-shrink: 0;
 }
 
 .logoimg {
-  width: 90px;
+  width: 80px;
   height: auto;
   display: block;
   cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.logoimg:hover {
+  opacity: 0.8;
 }
 
 .navcontainer ul.navitems {
@@ -33,33 +38,37 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.075em;
-  text-transform: uppercase;
   gap: 0.25rem;
 }
 
 .navcontainer ul.navitems li a {
   display: block;
-  color: #ffffff;
-  font-size: 1.1rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s;
   white-space: nowrap;
 }
 
 .navcontainer ul.navitems li a:hover {
-  color: #73ff00 !important;
-  background-color: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.navcontainer ul.navitems li a.active {
+  color: #818cf8;
+  background: rgba(129, 140, 248, 0.12);
 }
 
 @media screen and (max-width: 768px) {
   .navcontainer {
     flex-wrap: wrap;
     height: auto;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 1rem 0.8rem;
     gap: 0.5rem;
   }
 
@@ -70,22 +79,16 @@
   .navcontainer ul.navitems {
     width: 100%;
     justify-content: center;
-    gap: 0;
+    flex-wrap: wrap;
+    gap: 0.1rem;
   }
 
   .navcontainer ul.navitems li a {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.7rem;
   }
 
   .logoimg {
-    width: 65px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navcontainer ul.navitems li a {
-    font-size: 0.78rem;
-    padding: 0.35rem 0.5rem;
+    width: 60px;
   }
 }

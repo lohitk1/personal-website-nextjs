@@ -1,13 +1,13 @@
-import { Fragment } from 'react';
-
-import NavBar from './NavBar';
+import { Fragment } from "react";
+import NavBar from "./NavBar";
+import styles from "./layout.module.css";
 
 function Layout(props) {
   return (
-    <Fragment>
+    <div className={styles.wrapper}>
       <NavBar />
-      <main>{props.children}</main>
-    </Fragment>
+      <main className={styles.main}>{props.children}</main>
+    </div>
   );
 }
 

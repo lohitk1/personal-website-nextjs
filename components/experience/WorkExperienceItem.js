@@ -1,28 +1,18 @@
 function WorkExperienceItem(props) {
   return (
-    <li className="item">
-      <div className="date">
-        <h2>{props.date}</h2>
+    <li className="exp-item">
+      <span className="exp-date">{props.date}</span>
+      <div className="exp-header">
+        <h3 className="exp-company">{props.company}</h3>
+        <span className="exp-location">{props.location}</span>
       </div>
-      <div className="company">
-        <h3>
-          {props.company} | {props.location}
-        </h3>
-      </div>
-      <div className="role">
-        <h4>{props.role}</h4>
-      </div>
-      <div className="description">
-        {Array.isArray(props.description) ? (
-          <ul className="bullet-list">
-            {props.description.map((point, i) => (
-              <li key={i}>{point}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>{props.description}</p>
-        )}
-      </div>
+      <h4 className="exp-role">{props.role}</h4>
+      <ul className="bullet-list">
+        {Array.isArray(props.description)
+          ? props.description.map((point, i) => <li key={i}>{point}</li>)
+          : <li>{props.description}</li>
+        }
+      </ul>
     </li>
   );
 }

@@ -1,0 +1,13 @@
+.wrapper {
+  min-height: 100vh;
+  background: #07070f;
+  background-image:
+    radial-gradient(ellipse at 15% 0%,   rgba(129, 140, 248, 0.22) 0px, transparent 55%),
+    radial-gradient(ellipse at 85%  5%,  rgba(56,  189, 248, 0.16) 0px, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(167, 139, 250, 0.12) 0px, transparent 55%);
+  background-attachment: fixed;
+}
+
+.main {
+  /* nothing — each page handles its own spacing */
+}

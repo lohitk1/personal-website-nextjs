@@ -1,27 +1,32 @@
 import IntroPara from "../../components/about/IntroPara";
 import MyPic from "../../components/about/MyPic";
 import Skills from "../../components/about/Skills";
-import SectionHeading from "../../components/SectionHeading";
 
 import styles from "../../styles/css/aboutpage.module.css";
 
 export default function AboutPage() {
   return (
     <div className={styles.aboutpage}>
-      <article>
-        <div>
-          <SectionHeading text="About Me" className={styles.heading} />
+
+      {/* Bio: photo left, text right */}
+      <div className={styles.bio}>
+        <div className={styles.picCol}>
+          <MyPic />
         </div>
-        <div>
-          <MyPic className={styles.mypic} />
-        </div>
-        <div>
+        <div className={styles.textCol}>
+          <h1 className="section-heading" style={{ marginBottom: "0.75rem" }}>
+            About Me
+          </h1>
           <IntroPara />
         </div>
-        <div>
-          <Skills />
-        </div>
-      </article>
+      </div>
+
+      {/* Skills card */}
+      <div className={styles.skillsSection}>
+        <h2 className="section-heading">Skills</h2>
+        <Skills />
+      </div>
+
     </div>
   );
 }
