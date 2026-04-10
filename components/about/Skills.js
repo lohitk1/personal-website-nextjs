@@ -2,46 +2,38 @@ function Skills() {
   return (
     <div>
       <div className="skills-container">
-        {/* Paragraph about soft skills */}
-        <p className="soft-skills">
-          I'm an efficent and hard worker that brings leadership qualities to
-          the table. My areas of <br />
-          expertise are economics and computer science, more specifically:
-          machine learning and web <br />
-          development. Here are my techincal skills:
-        </p>
-        {/* Techincal skills */}
         <div className="tech-skills-container">
           <ul className="tech-skills-items">
             <li>
-              <h3>Programming</h3>
+              <h3>Languages &amp; Frameworks</h3>
               <ul>
                 <li>Python</li>
-                <li>C++</li>
+                <li>C / C++</li>
+                <li>Go</li>
                 <li>Java</li>
+                <li>x86 / ARM / RISC-V Assembly</li>
               </ul>
             </li>
             <li>
-              <h3>Web Development</h3>
+              <h3>Data &amp; AI / ML</h3>
               <ul>
-                <li>HTML + CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>NextJS</li>
-                <li>Django</li>
+                <li>SQL</li>
+                <li>Redis</li>
+                <li>Databricks</li>
+                <li>TensorFlow</li>
+                <li>Pandas</li>
               </ul>
             </li>
             <li>
-              <h3>Database Management</h3>
+              <h3>Developer Tools</h3>
               <ul>
-                <li>MySQL</li>
-              </ul>
-            </li>
-            <li>
-              <h3>AI/ML</h3>
-              <ul>
-                <li>Tensorflow</li>
-                <li>SckitLearn</li>
+                <li>Linux / Unix</li>
+                <li>Git</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>Terraform</li>
+                <li>Splunk</li>
+                <li>Bazel</li>
               </ul>
             </li>
           </ul>

@@ -6,9 +6,9 @@ function ProjectList(props) {
       <ul className="list">
         {props.projects?.map((project) => (
           <ProjectItem
+            key={project.id}
             id={project.id}
             title={project.title}
-            date={project.date}
             tech={project.tech}
             description={project.description}
             link={project.link}

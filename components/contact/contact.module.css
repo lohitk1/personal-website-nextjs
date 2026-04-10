@@ -425,17 +425,15 @@ ul.actions.fit {
 
 .footer {
   color: #717981;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   background-color: #f5f5f5;
   color: #909498;
   cursor: default;
   position: relative;
   margin: 0 auto;
-  width: calc(100% - 4rem);
+  width: 100%;
   max-width: 72rem;
+  border-radius: 1.5rem;
   z-index: 2;
   text-align: center;
 }

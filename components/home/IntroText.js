@@ -1,5 +1,6 @@
 import styles from "./introtext.module.css";
 import SocialMedia from "./SocialMedia";
+
 function IntroText() {
   return (
     <div className={styles.fadein}>
@@ -15,7 +16,7 @@ function IntroText() {
         <p>
           University of Michigan, Ann Arbor
           <br />
-          Computer Science | Economics
+          Masters in Computer Science Engineering
         </p>
       </div>
     </div>

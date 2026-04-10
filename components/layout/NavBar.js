@@ -9,31 +9,23 @@ function NavBar() {
     <div className={styles.navcontainer}>
       <ul className={styles.navitems}>
         <li className={styles.logo}>
-          <Link href="/#">
-            <div className = {styles.logoimg}>
-            <Image src={Logo} alt="Logo" />
+          <Link href="/">
+            <div className={styles.logoimg}>
+              <Image src={Logo} alt="Logo" />
             </div>
           </Link>
         </li>
         <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="/experience">
-            <a>Experience</a>
-          </Link>
+          <Link href="/experience">Experience</Link>
         </li>
         <li>
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
+          <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </div>

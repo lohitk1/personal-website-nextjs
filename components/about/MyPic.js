@@ -4,7 +4,7 @@ import mypic from "../../assets/MyPicture.png";
 function MyPic() {
   return (
     <div className="my-pic">
-      <Image src={mypic} />
+      <Image src={mypic} alt="Lohit Kamatham" />
     </div>
   );
 }

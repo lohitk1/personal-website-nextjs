@@ -5,7 +5,7 @@ import styles from "../../styles/css/projectspage.module.css";
 
 export default function Projects() {
   return (
-    <div class={styles.projectspage}>
+    <div className={styles.projectspage}>
       <article>
         <ProjectsList projects={projects_data} />
       </article>

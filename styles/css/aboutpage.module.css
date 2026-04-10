@@ -3,48 +3,36 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem 1rem;
 }
 
 .aboutpage article {
-    -moz-transform: translateY(0.25rem);
-    -webkit-transform: translateY(0.25rem);
-    -ms-transform: translateY(0.25rem);
-    transform: translateY(0.25rem);
-    -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
-    -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
-    -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
-    transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-    padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
-    position:relative;
-    width: 70rem;
-    max-width: 100%;
-    background-color: rgba(206, 209, 191, 0.635);
-    border-radius: 1.5rem;
-    opacity: 0;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: 90%;
+  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  width: 70rem;
+  max-width: 100%;
+  background-color: rgba(206, 209, 191, 0.85);
+  border-radius: 1.5rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
-
-    .aboutpage article{
-        -moz-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-
 
 .aboutpage li {
-    list-style: none;
-    padding-right: 3.5rem;
+  list-style: none;
+  padding-right: 1rem;
 }
 
+.aboutpage .bullet-list li {
+  list-style: disc;
+  text-align: left;
+  padding-right: 0;
+}
 
-
-
-
-
+@media screen and (max-width: 736px) {
+  .aboutpage article {
+    padding: 2rem 1.25rem 2rem 1.25rem;
+    border-radius: 1rem;
+  }
+}

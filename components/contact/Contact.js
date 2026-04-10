@@ -6,22 +6,22 @@ function Contact() {
   return (
     <div className={styles.footer}>
       <section>
-        <form method="get" action ="" className={styles.formf}>
+        <form method="post" action="" className={styles.formf}>
           <div className={styles.fields}>
             <div className={styles.field}>
-              <label for="name" className={styles.labell}>
-                Name{" "}
+              <label htmlFor="name" className={styles.labell}>
+                Name
               </label>
               <input type="text" name="name" id="name" />
             </div>
             <div className={styles.field}>
-              <label for="email" className={styles.labell}>
+              <label htmlFor="email" className={styles.labell}>
                 Email
               </label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </div>
             <div className={styles.field}>
-              <label for="message" className={styles.labell}>
+              <label htmlFor="message" className={styles.labell}>
                 Message
               </label>
               <textarea name="message" id="message" rows="3"></textarea>
@@ -39,15 +39,6 @@ function Contact() {
         </form>
       </section>
       <section className={styles.splitcontact}>
-        <section className={styles.alt}>
-          <h3>Address</h3>
-          <p>
-            {" "}
-            525 Walnut St. #05
-            <br />
-            Ann Arbor, MI-48104
-          </p>
-        </section>
         <section>
           <h3>Phone</h3>
           <p>(734) 510-0789</p>
@@ -55,9 +46,7 @@ function Contact() {
         <section>
           <h3>Email</h3>
           <p>
-            <Link href="mailto:kamatham.lohit@gmail.com">
-              <a>kamatham.lohit@gmail.com</a>
-            </Link>
+            <Link href="mailto:lohitk@umich.edu">lohitk@umich.edu</Link>
           </p>
         </section>
         <section>
@@ -68,12 +57,12 @@ function Contact() {
                 href="https://www.linkedin.com/in/lohitk"
                 className={styles.icon}
               >
-                <span className={styles.label}>Linkedin</span>
+                <span className={styles.label}>LinkedIn</span>
               </a>
             </li>
             <li>
               <a href="https://github.com/lohitk1" className={styles.icon}>
-                <span className={styles.label}>Github</span>
+                <span className={styles.label}>GitHub</span>
               </a>
             </li>
             <li>
@@ -82,14 +71,6 @@ function Contact() {
                 className={styles.icon}
               >
                 <span className={styles.label}>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.snapchat.com/add/lohitreddy359?share_id=59_YEeLu2BM&locale=en-US"
-                className={styles.icon}
-              >
-                <span className={styles.label}>Snapchat</span>
               </a>
             </li>
           </ul>
