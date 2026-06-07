@@ -12,8 +12,8 @@ function Contact() {
         </div>
         <div className={styles.infoItem}>
           <span className={styles.infoLabel}>Email</span>
-          <Link href="mailto:lohitk@umich.edu" className={styles.infoLink}>
-            lohitk@umich.edu
+          <Link href="mailto:kamatham.lohit@gmail.com" className={styles.infoLink}>
+            kamatham.lohit@gmail.com
           </Link>
         </div>
         <div className={styles.infoItem}>
