@@ -51,7 +51,7 @@ function Contact() {
         </div>
         <div className={styles.field}>
           <label htmlFor="message" className={styles.label}>Message</label>
-          <textarea id="message" name="message" rows="5" className={styles.textarea} placeholder="Secretly send Lohit Kamatham a message" />
+          <textarea id="message" name="message" rows="5" className={styles.textarea} placeholder="Secretly send Lohit a message" />
         </div>
         <button type="submit" className={styles.submit}>Send Message</button>
       </form>
