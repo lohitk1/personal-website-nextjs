@@ -60,8 +60,8 @@
 }
 
 .navcontainer ul.navitems li a.active {
-  color: #818cf8;
-  background: rgba(129, 140, 248, 0.12);
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.12);
 }
 
 @media screen and (max-width: 768px) {

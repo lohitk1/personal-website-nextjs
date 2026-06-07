@@ -19,11 +19,11 @@ a {
 
 /* ── Design tokens ────────────────────────────────────────── */
 :root {
-  --primary:   #818cf8;
-  --secondary: #38bdf8;
-  --accent:    #a78bfa;
-  --gradient:  linear-gradient(135deg, #818cf8 0%, #38bdf8 100%);
-  --grad-text: linear-gradient(135deg, #818cf8 0%, #38bdf8 50%, #c084fc 100%);
+  --primary:   #34d399;
+  --secondary: #4ade80;
+  --accent:    #86efac;
+  --gradient:  linear-gradient(135deg, #34d399 0%, #4ade80 100%);
+  --grad-text: linear-gradient(135deg, #34d399 0%, #86efac 50%, #a3e635 100%);
   --text:      #e2e8f0;
   --muted:     #94a3b8;
   --dim:       #64748b;
@@ -82,7 +82,7 @@ ul.exp-list::before {
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background: linear-gradient(to bottom, #818cf8, #38bdf8, rgba(56,189,248,0.1));
+  background: linear-gradient(to bottom, #34d399, #4ade80, rgba(74,222,128,0.1));
   border-radius: 2px;
 }
 
@@ -105,7 +105,7 @@ ul.exp-list::before {
   height: 16px;
   border-radius: 50%;
   background: var(--gradient);
-  box-shadow: 0 0 16px rgba(129, 140, 248, 0.7);
+  box-shadow: 0 0 16px rgba(52, 211, 153, 0.7);
   z-index: 1;
 }
 
@@ -172,8 +172,8 @@ ul.proj-list {
 }
 
 .proj-card:hover {
-  border-color: rgba(129, 140, 248, 0.45);
-  box-shadow: 0 12px 40px rgba(129, 140, 248, 0.15);
+  border-color: rgba(52, 211, 153, 0.45);
+  box-shadow: 0 12px 40px rgba(52, 211, 153, 0.15);
   transform: translateY(-3px);
 }
 
@@ -196,8 +196,8 @@ ul.proj-list {
   font-weight: 700;
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
-  background: rgba(129, 140, 248, 0.12);
-  border: 1px solid rgba(129, 140, 248, 0.28);
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.28);
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -257,8 +257,8 @@ ul.proj-list {
 .my-pic {
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid rgba(129, 140, 248, 0.4);
-  box-shadow: 0 0 40px rgba(129, 140, 248, 0.25);
+  border: 3px solid rgba(52, 211, 153, 0.4);
+  box-shadow: 0 0 40px rgba(52, 211, 153, 0.25);
   width: fit-content;
 }
 
